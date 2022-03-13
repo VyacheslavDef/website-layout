@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Work</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="chief-slider.css">
+        <link rel="stylesheet" type="text/css" href="fonts/museosanscyrl.css">
+  </head>
+
+<body>
+    <header>
+        <div class="test">
+          <ul class="header">
+            <li><a href="">Главная</a></li>
+            <li><a href="">О нас</a></li>
+            <li><a href="">Консультация</a></li>
+          </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h1>Просто. Красиво. Стильно.</h1>
+                <h2>Только лучшие решения.</h2>
+                <h3>Каждый из нас понимает очевидную вещь: граница обучения кадров требует определения
+                   и уточнения анализа существующих паттернов поведения. С другой стороны, дальнейшее
+                    развитие различных форм деятельности позволяет оценить значение стандартных подходов.</h3>
+                <a href=""><h5 class="btn">КОНСУЛЬТАЦИЯ</h5></a>
+            </div>
+            <div class="col-6 img">
+                <img class="tittle_img" src="img/giphy.gif" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container1">
+      <div><H3>— Наши кейсы</H3></div>
+        <div class="slider">
+            <div class="slider__wrapper">
+              <div class="slider__items">
+                <div class="slider__item">
+                  <img class="slider_img" src="img/1.jpg" alt="">
+                  <div class="slider__description"><h5 class="slider_text">Просто код</h5></div>
+                </div>
+                <div class="slider__item">
+                  <img class="slider_img" src="img/2.jpg" alt="">
+                  <div class="slider__description"><h5 class="slider_text">Современная верстка</h5></div>
+                </div>
+                <div class="slider__item">
+                  <img class="slider_img" src="img/3.jpg" alt="">
+                  <div class="slider__description"><h5 class="slider_text">Дизайн</h5></div>
+                </div>
+                <div class="slider__item">
+                  <img class="slider_img" src="img/4.jpg" alt="">
+                  <div class="slider__description"><h5 class="slider_text">Специалисты</h5></div>
+                </div>
+                <div class="slider__item">
+                  <img class="slider_img" src="img/5.jpg" alt="">
+                  <div class="slider__description"><h5 class="slider_text">Сервер</h5></div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="slider__control" data-slide="prev"></a>
+            <a href="#" class="slider__control" data-slide="next"></a>
+          </div>
+    </div>
+
+    <div class="container1">
+        <div class="row">
+            <div class="col-6"><h3>— О нас</h3>
+              <h5>Равным образом консультация с широким активом требуют определения
+              и уточнения модели развития. Если у вас есть какие то интересные предложения, обращайтесь!
+              Студия Web-Boss всегда готова решить любую задачу.
+             С другой стороны укрепление и развитие структуры
+             обеспечивает участие в формировании систем массового участия.</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script defer src="chief-slider.js"></script>
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            const slider = new ChiefSlider('.slider', {
+                loop: true,
+                autoplay: true,
+                interval: 5000,
+                swipe: true,
+                refresh: false
+            });
+          });
+        </script>
+</body>
